@@ -1,0 +1,28 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1070px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 160px;
+}
+
+.pricing__col {
+  width: 330px;
+  background-color: $color-3;
+  flex: 0 1 auto;
+
+
+  &--center {
+  	width: 370px;
+  }
+}
+

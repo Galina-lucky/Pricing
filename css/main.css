@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: 'Bebas neue';
+  src: url("../bebasneue_bold-webfont.eot");
+  src: url("../bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../bebasneue_bold-webfont.woff2") format("woff2"), url("../bebasneue_bold-webfont.woff") format("woff"), url("../bebasneue_bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas neue';
+  src: url("../bebasneue_light-webfont.eot");
+  src: url("../bebasneue_light-webfont.eot?#iefix") format("embedded-opentype"), url("../bebasneue_light-webfont.woff2") format("woff2"), url("../bebasneue_light-webfont.woff") format("woff"), url("../bebasneue_light-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas neue';
+  src: url("../bebasneue_regular-webfont.eot");
+  src: url("../bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../bebasneue_regular-webfont.woff2") format("woff2"), url("../bebasneue_regular-webfont.woff") format("woff"), url("../bebasneue_regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas neue';
+  src: url("../bebasneue_thin-webfont.eot");
+  src: url("../bebasneue_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../bebasneue_thin-webfont.woff2") format("woff2"), url("../bebasneue_thin-webfont.woff") format("woff"), url("../bebasneue_thin-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:after, :before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a,
+button, input[type=button], input[type=submit] {
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  cursor: pointer;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #181818;
+  height: auto;
+  background-color: #9789f9;
+}
+
+main {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+}
+
+.pricing__col {
+  width: 330px;
+  background-color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+.pricing__col--center {
+  width: 370px;
+}
+
+/*# sourceMappingURL=main.css.map */
