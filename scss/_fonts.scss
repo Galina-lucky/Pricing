@@ -1,45 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 @font-face {
-    font-family: 'Bebas neue';
-    src: url('../bebasneue_bold-webfont.eot');
-    src: url('../bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../bebasneue_bold-webfont.woff2') format('woff2'),
-         url('../bebasneue_bold-webfont.woff') format('woff'),
-         url('../bebasneue_bold-webfont.ttf') format('truetype');
+    font-family: 'Bebas Neue';    
+    src: url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_bold-webfont.woff') format('woff');         
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bebas neue';
-    src: url('../bebasneue_light-webfont.eot');
-    src: url('../bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../bebasneue_light-webfont.woff2') format('woff2'),
-         url('../bebasneue_light-webfont.woff') format('woff'),
-         url('../bebasneue_light-webfont.ttf') format('truetype');
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bebas neue';
-    src: url('../bebasneue_regular-webfont.eot');
-    src: url('../bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../bebasneue_regular-webfont.woff2') format('woff2'),
-         url('../bebasneue_regular-webfont.woff') format('woff'),
-         url('../bebasneue_regular-webfont.ttf') format('truetype');
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bebas neue';
-    src: url('../bebasneue_thin-webfont.eot');
-    src: url('../bebasneue_thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../bebasneue_thin-webfont.woff2') format('woff2'),
-         url('../bebasneue_thin-webfont.woff') format('woff'),
-         url('../bebasneue_thin-webfont.ttf') format('truetype');
+    font-family: 'Bebas Neue';
+    src:  url('../fonts/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_thin-webfont.woff') format('woff');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Themify';
+    src: url('../fonts/themify-webfont.woff2') format('woff2'),
+         url('../fonts/themify-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+[class^="ti-"], [class*=" ti-"] {
+    font-family: 'Themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-paint-bucket:before {
+    content: "\e61f";
+}
+
+.ti-palette:before {
+    content: "\e6e0";
+}
+
+.ti-hummer:before {
+    content: "\e69a";
 }

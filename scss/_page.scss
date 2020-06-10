@@ -5,24 +5,294 @@
 }
 
 .pricing {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 1070px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 160px;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
 
-.pricing__col {
-  width: 330px;
-  background-color: $color-3;
-  flex: 0 1 auto;
+  &__col {
+    width: 330px;
+    background-color: $color-6;
+    box-shadow: 2px 4px 59px 0px $color-secondary;
+    padding-top: 35px;
 
-
-  &--center {
-  	width: 370px;
+    &--center {
+      width: 370px;
+      position: relative;
+      padding-top: 50px;
+    }
   }
 }
+
+.tooltip {
+  display: block;
+  min-width: 100px;
+  padding: 7px 25px;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-3;
+  background-color: $color-8;
+  border: 1px solid $color-8;
+  border-radius: 20px;
+  visibility: hidden;
+
+  &:before {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6.5px 5px 6.5px 0;
+    border-color: transparent $color-8 transparent transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -4px;
+  }
+}
+
+.bubble {
+  display: block;
+  content: "P";
+  width: 46px;
+  height: 46px;
+  background-color: $color-5;
+  border-radius: 50%;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 24px;
+  color: $color-3;
+  text-align: center;
+  line-height: 46px;
+  outline: none;
+
+  &:focus + .tooltip, &:hover + .tooltip{
+    visibility: visible;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $color-5;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: $color-5;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+    right: -11px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  min-width: 200px;
+  padding: 15px 45px;
+  font-family: $font-family-secondary;
+  font-size: 18px;
+  font-weight: bold; 
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  background-color: $color-4;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 2px 4px 18px 0px $color-4;
+  text-transform: uppercase;
+  color: $color-3;
+
+  &:hover {
+    background-color: $color-3;
+    box-shadow: 0 0 10px $color-4;
+    color: $color-4;
+  }
+
+  &:focus {
+    border-color: darken($color-4, 20);
+  }
+
+  &:active {
+    border-color: darken($color-4, 20);
+    background-color: darken($color-4, 10);
+    color: $color-3;
+  }
+
+  &--secondary {
+    background-color: $color-5;
+    box-shadow: 2px 4px 18px 0px $color-5;
+
+    &:hover {
+      background-color: $color-3;
+      box-shadow: 0 0 10px $color-5;
+      color: $color-5;
+    }
+
+    &:focus {
+      border-color: darken($color-5, 20);
+    }
+
+    &:active {
+      border-color: darken($color-5, 20);
+      background-color: darken($color-5, 10);
+      color: $color-3;
+    } 
+  }
+}
+
+.wrapper-icon {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 17px;
+
+  // &--center {
+  //   margin-bottom: 27px;
+  // }
+}
+
+.price {
+  position: relative;
+  text-align: center;
+  padding-bottom: 60px;
+
+  &__rate {
+    display: inline-block;
+    position: relative;
+    font-family: $font-family-secondary;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+    &:before {
+      content: "$";
+      display: inline-block;
+      font-size: 16px;
+      position: absolute;
+      top: 7px;
+      left: -11%;
+    }
+
+    &:after {
+      content: "/HR";
+      display: inline-block;
+      font-size: 16px;
+      position: absolute;
+      bottom: 7px;
+      right: -45%;
+    }
+
+    &--center {
+      align-self: center;
+    }
+  }
+
+  &__position {
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+    // &--center {
+    //   margin-bottom: 40px;
+    // }
+  }
+
+  &__body {
+    background-color: $color-3;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 35px;
+    border-radius: 300px 300px 0 0 / 150px 150px 0 0;
+    padding-bottom: 45px;
+  }
+
+  &__icon {
+    font-size: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    font-family: $font-family-base;
+    font-size: 16px;
+    line-height: 3.3125;
+    text-align: left;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &__btn--center {
+    bottom: 105px;
+  }
+
+  &__footer {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__footer-text {
+    font-family: $font-family-base;
+    font-size: 11px;
+    color: $color-7;
+  }
+
+  &--center {
+    padding-bottom: 0;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__bubble {
+    position: absolute;
+    top: -28px;
+    right: 20px;
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: -20px;
+    right: -88px;
+  }
+}
+
+
+
 
