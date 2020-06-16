@@ -10,16 +10,15 @@
 	-webkit-box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
+h2
+{
 	margin: 0;
 }
 
 %controls-transition {
-	-webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
+	-webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out, visibility .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out, visibility .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out, visibility .15s ease-in-out;
     cursor: pointer;
 }
 

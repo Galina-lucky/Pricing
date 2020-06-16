@@ -71,18 +71,17 @@
   -webkit-box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
+h2 {
   margin: 0;
 }
 
 a,
 button, input[type=button], input[type=submit] {
-  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out, visibility .15s ease-in-out;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out, visibility .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out, visibility .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out, visibility .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out, visibility .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   cursor: pointer;
 }
 
@@ -125,10 +124,10 @@ main {
   margin-right: auto;
 }
 .pricing__col {
-  width: 330px;
+  width: 30.8411%;
 }
 .pricing__col--center {
-  width: 370px;
+  width: 34.5794%;
 }
 
 .tooltip {
@@ -136,7 +135,6 @@ main {
   min-width: 100px;
   padding: 7px 25px;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
@@ -145,10 +143,11 @@ main {
   border: 1px solid #3b4040;
   border-radius: 20px;
   visibility: hidden;
+  opacity: 0.2;
 }
 .tooltip:before {
   content: " ";
-  display: inline-block;
+  display: block;
   width: 0;
   height: 0;
   border-style: solid;
@@ -163,13 +162,11 @@ main {
 
 .bubble {
   display: block;
-  content: "P";
   width: 46px;
   height: 46px;
   background-color: #fd8d7b;
   border-radius: 50%;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   color: #ffffff;
   text-align: center;
@@ -178,6 +175,7 @@ main {
 }
 .bubble:focus + .tooltip, .bubble:hover + .tooltip {
   visibility: visible;
+  opacity: 1;
 }
 .bubble:before {
   content: "";
@@ -288,12 +286,12 @@ main {
 }
 .price__bubble {
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 20px;
 }
 .price__tooltip {
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: -90px;
   z-index: 1;
 }
